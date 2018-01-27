@@ -1,12 +1,27 @@
-## TudeBot v3.0
+# TudeBot v3.0
 
 This is the 3rd version of TudeBot for Discord.
 
-# Technologies used
-* [Discord4j](https://discord4j.com/)
-* [json.org](https://json.org/)
+**Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
-# Setup
-1. Clone repository in the IDE of your choice (I prefer Eclipse using egit)
+### Features
+None, yet
+
+### Planned
+- Quotes Channel
+- Memes rating
+
+### Technologies used
+* [Discord4j](https://discord4j.com/) (v2.9.3)
+* [JSON-java](https://github.com/stleary/JSON-java)
+
+### Setup
+1. Clone repository in the IDE of your choice
 2. Add d4j & json.org to your classpath
-3. Go in cls and edit `user_preferences.prop`
+3. Go in `cls` and edit `user_preferences.prop` with your values *(do not use " for the string values)*
+4. Done
+
+### user_preferences.prop
+* **CLIENT_TOKEN:** Your Discord Bot User Secret
+* **SERVER_ID:** Your server's id - this bot was made for use on one server only
+* **PLAYING_TEXT:** Change what the bot is playing (In Discord interface)
