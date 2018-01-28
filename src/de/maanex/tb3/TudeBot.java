@@ -1,6 +1,9 @@
 package de.maanex.tb3;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import de.maanex.tb3.manager.SettingManager;
 import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
@@ -17,6 +20,8 @@ public class TudeBot {
 	public static IDiscordClient	client;
 	public static IGuild			guild;
 
+	private static List<BotModule> mods = new ArrayList<>();
+
 	//
 
 	public static void main(String[] args) {
@@ -29,11 +34,12 @@ public class TudeBot {
 			guild = client.getGuildByID(SettingManager.readLongSetting(SettingManager.SERVER_ID));
 
 			ModuleLoader.loadModules();
+			mods.forEach(m -> client.getDispatcher().registerListener(m));
 		});
 	}
 
 	public static void addModule(BotModule mod) {
-
+		mods.add(mod);
 	}
 
 }

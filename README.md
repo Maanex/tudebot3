@@ -1,6 +1,7 @@
 # TudeBot v3.0
 
 This is the 3rd version of TudeBot for Discord.
+You can test it live here: http://bit.ly/TudeDiscord
 
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 

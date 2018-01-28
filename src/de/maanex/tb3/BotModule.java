@@ -9,8 +9,6 @@ public abstract class BotModule {
 	protected BotModule(String name, String[] args) {
 		this.name = name;
 		this.args = args;
-
-		TudeBot.client.getDispatcher().registerListener(this);
 	}
 
 	public String getName() {
