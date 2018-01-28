@@ -1,6 +1,7 @@
 package de.maanex.tb3;
 
 
+import de.maanex.tb3.manager.SettingManager;
 import sx.blah.discord.api.ClientBuilder;
 import sx.blah.discord.api.IDiscordClient;
 import sx.blah.discord.handle.obj.IGuild;
@@ -19,19 +20,15 @@ public class TudeBot {
 	//
 
 	public static void main(String[] args) {
-		client = new ClientBuilder().withToken(SettingManager.readPreference(SettingManager.CLIENT_SECRET)).login();
+		client = new ClientBuilder().withToken(SettingManager.readSetting(SettingManager.CLIENT_SECRET)).login();
 		ThreadingLib.newThread(() -> {
-			try {
-				while (!client.isReady())
-					Thread.sleep(500);
+			while (!client.isReady())
+				ThreadingLib.sleep(500);
 
-				client.changePlayingText(SettingManager.readPreference(SettingManager.PLAYING_TEXT));
-				guild = client.getGuildByID(SettingManager.readLongPreference(SettingManager.SERVER_ID));
+			client.changePlayingText(SettingManager.readSetting(SettingManager.PLAYING_TEXT));
+			guild = client.getGuildByID(SettingManager.readLongSetting(SettingManager.SERVER_ID));
 
-				ModuleLoader.loadModules();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			ModuleLoader.loadModules();
 		});
 	}
 

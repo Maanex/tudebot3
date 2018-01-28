@@ -1,6 +1,9 @@
 package de.maanex.tb3;
 
 
+import de.maanex.tb3.manager.SettingManager;
+
+
 public class Cls {
 
 	private Cls() {
@@ -8,5 +11,9 @@ public class Cls {
 
 	public static final String	SETTINGS	= "/settings.prop";
 	public static final String	MODULES		= "/modules.prop";
+
+	public static final String LANG() {
+		return "/lang_" + SettingManager.readSetting(SettingManager.LANG) + ".prop";
+	};
 
 }

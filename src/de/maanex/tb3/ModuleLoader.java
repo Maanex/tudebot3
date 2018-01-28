@@ -5,6 +5,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
 
+import de.maanex.tb3.manager.SettingManager;
+
 
 public class ModuleLoader {
 
