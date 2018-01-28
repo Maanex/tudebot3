@@ -13,7 +13,7 @@ public class Cls {
 	public static final String	MODULES		= "/modules.prop";
 
 	public static final String LANG() {
-		return "/lang_" + SettingManager.readSetting(SettingManager.LANG) + ".prop";
+		return "/" + SettingManager.readSetting(SettingManager.LANG) + ".lang";
 	};
 
 }
