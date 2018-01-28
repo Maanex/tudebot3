@@ -6,7 +6,7 @@ You can test it live here: http://bit.ly/TudeDiscord
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
 ## Features
-###Done
+### Done
 - Quotes Channel
 
 ### Planned
@@ -28,7 +28,7 @@ You can test it live here: http://bit.ly/TudeDiscord
 3. Go in `cls` and edit `user_preferences.prop` with your values *(do not use " for the string values)*
 4. Done
 
-##Files
+## Files
 ### settings.prop
 * **CLIENT_TOKEN:** Your Discord Bot User Secret
 * **SERVER_ID:** Your server's id - this bot was made for use on one server only
