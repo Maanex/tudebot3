@@ -6,11 +6,16 @@ You can test it live here: http://bit.ly/TudeDiscord
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
 ### Features
-None, yet
+- Quotes Channel
 
 ### Planned
-- Quotes Channel
 - Memes rating
+- Dynamic Voice Channel System
+- Statistics with MySQL Database
+- Youtube Video playing
+- Youtube livestream playing
+- Save and load song playlists
+- Voice control of music
 
 ### Technologies used
 * [Discord4j](https://discord4j.com/) (v2.9.3)
