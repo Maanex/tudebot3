@@ -5,7 +5,7 @@
 # Module Load Description:
 #	classpath.to.Class Argument1 Argument2 Argument3 ...
 #
-# Modules can have 0 - infinity String arguments which can dynamically changed in this file
+# Modules can have 0 - infinity String arguments which can be dynamically changed in this file
 # To unload a module, simply add a # as first character in that line
 #
 # You can also add your own modules with the exact same scheme
@@ -13,3 +13,6 @@
 
 # Quotes -- Args: Channelname,
 de.maanex.tb3.modules.Quotes Zitate
+
+# Memes -- Args: Channelname,
+de.maanex.tb3.modules.Memes Memes

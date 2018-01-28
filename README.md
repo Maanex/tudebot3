@@ -31,3 +31,4 @@ You can test it live here: http://bit.ly/TudeDiscord
 * **CLIENT_TOKEN:** Your Discord Bot User Secret
 * **SERVER_ID:** Your server's id - this bot was made for use on one server only
 * **PLAYING_TEXT:** Change what the bot is playing (In Discord interface)
+* **LANG:** Change the language in which the bot replies

@@ -64,7 +64,7 @@ public class Quotes extends BotModule {
 	public void onReaction(ReactionAddEvent e) {
 		if (!e.getChannel().getName().equalsIgnoreCase(getArgs()[0])) return;
 		if (e.getUser().isBot()) return;
-		if (!e.getReaction().getUnicodeEmoji().getHtmlDecimal().equals("&#10060;")) return;
+		if (e.getReaction().isCustomEmoji() || !e.getReaction().getUnicodeEmoji().getHtmlDecimal().equals("&#10060;")) return;
 
 		if (quotesBy.containsKey(e.getMessage())) {
 			if (e.getUser().equals(quotesBy.get(e.getMessage()))) {
