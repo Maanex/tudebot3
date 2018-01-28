@@ -8,10 +8,10 @@ You can test it live here: http://bit.ly/TudeDiscord
 ## Features
 ### Done
 - Quotes Channel
-
-### Planned
 - Memes rating
 - Dynamic Voice Channel System
+
+### Planned
 - Statistics with MySQL Database
 - Youtube Video playing
 - Youtube livestream playing
@@ -38,7 +38,7 @@ You can test it live here: http://bit.ly/TudeDiscord
 ### modules.prop
 A # marks a comment.
 To add a new module use this syntax:
-'package.Class Arg1 ...'
+`package.Class Arg1 ...`
 
 ### ?.lang
 A language file. Filename (before .lang) marks the language, simply write this as **LANG** in **settings.prop**

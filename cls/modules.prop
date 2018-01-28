@@ -16,3 +16,7 @@ de.maanex.tb3.modules.Quotes Zitate
 
 # Memes -- Args: Channelname,
 de.maanex.tb3.modules.Memes Memes
+
+# DynVoiceChan -- Args: Categoryname, Channelname,
+# This module deletes all empty voice channels in one category but one and automatically adds a new one when someone joins
+de.maanex.tb3.modules.DynamicVoiceChannels FFA Reden

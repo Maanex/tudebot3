@@ -23,7 +23,7 @@ public class Memes extends BotModule {
 	private static final HashMap<Emoji, Integer> emojis = new HashMap<>();
 
 	private static final int	REACTION_ADD_DELAY	= 100;	// 0 is not possible due to rate limits
-	private static final int	BOUNDS_FACTOR		= 3;
+	private static final int	BOUNDS_FACTOR		= 4;
 
 	static {
 		emojis.put(EmojiManager.getForAlias("fire"), 2);
