@@ -1,6 +1,6 @@
 
 # Your Discord Bot User Secret
-CLIENT_SECRET=MjY4NDYxMTg1MTczNjg0MjI0.DSQ_Iw.9ErhbdiiROhQfJTMS2PPTgRZ5c4
+CLIENT_SECRET=yourclientsecrethere
 
 # Your server's id - this bot was made for use on one server only
 SERVER_ID=268377578375610368
