@@ -10,7 +10,6 @@ import sx.blah.discord.handle.impl.events.guild.voice.user.UserVoiceChannelLeave
 import sx.blah.discord.handle.impl.events.guild.voice.user.UserVoiceChannelMoveEvent;
 import sx.blah.discord.handle.obj.IChannel;
 import sx.blah.discord.handle.obj.IUser;
-import sx.blah.discord.handle.obj.IVoiceChannel;
 import sx.blah.discord.handle.obj.Permissions;
 
 
@@ -32,16 +31,14 @@ public class DynamicVoiceChannels extends BotModule {
 
 	@EventSubscriber
 	public void onChannelMove(UserVoiceChannelMoveEvent e) {
-		if (e.getNewChannel().getName().equalsIgnoreCase(getArgs()[1])) joinVoice(e.getUser(), e.getVoiceChannel());
-		if (e.getOldChannel().getCategory().getName().equalsIgnoreCase(getArgs()[0])) leaveVoice(e.getUser(), e.getVoiceChannel());
+		if (e.getNewChannel().getName().equalsIgnoreCase(getArgs()[1])) joinVoice(e.getUser(), e.getNewChannel());
+		if (e.getOldChannel().getCategory().getName().equalsIgnoreCase(getArgs()[0])) leaveVoice(e.getUser(), e.getOldChannel());
 	}
 
 	private void joinVoice(IUser user, IChannel channel) {
 		if (channel.getUsersHere().size() == 1) {
-			IVoiceChannel n = channel.getCategory().createVoiceChannel(getArgs()[1]);
-
-			channel.overrideRolePermissions(channel.getGuild().getEveryoneRole(), EnumSet.of(Permissions.MANAGE_CHANNEL), EnumSet.of(Permissions.VOICE_MOVE_MEMBERS));
-			n.overrideRolePermissions(channel.getGuild().getEveryoneRole(), EnumSet.of(Permissions.VOICE_CONNECT), EnumSet.of(Permissions.VOICE_MOVE_MEMBERS));
+			channel.getCategory().createVoiceChannel(getArgs()[1]);
+			channel.overrideUserPermissions(user, EnumSet.of(Permissions.MANAGE_CHANNEL, Permissions.VOICE_MOVE_MEMBERS), EnumSet.of(Permissions.VOICE_MOVE_MEMBERS));
 		}
 	}
 
