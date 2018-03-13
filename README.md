@@ -25,13 +25,13 @@ You can test it live here: http://bit.ly/TudeDiscord
 ## Setup
 1. Clone repository in the IDE of your choice
 2. Add d4j & json.org to your classpath
-3. Go in `cls` and edit `user_preferences.prop` with your values *(do not use " for the string values)*
+3. Go in `cls` and edit `settings.prop` with your values *(do not use " for the string values)*
 4. Done
 
 ## Files
 ### settings.prop
 * **CLIENT_TOKEN:** Your Discord Bot User Secret
-* **SERVER_ID:** Your server's id - this bot was made for use on one server only
+* **SERVER_ID:** Outdated. Just leave this one empty.
 * **PLAYING_TEXT:** Change what the bot is playing (In Discord interface)
 * **LANG:** Change the language in which the bot replies
 
