@@ -1,7 +1,7 @@
 # TudeBot v3.0
 
 This is the 3rd version of TudeBot for Discord.
-You can test it live here: http://bit.ly/TudeDiscord
+You can test it live here: http://discord.tude.ga/
 
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
@@ -16,7 +16,7 @@ You can test it live here: http://bit.ly/TudeDiscord
 - Youtube Video playing
 - Youtube livestream playing
 - Save and load song playlists
-- Voice control of music
+- Voice control of music (everyone can dream)
 
 ## Technologies used
 * [Discord4j](https://discord4j.com/) (v2.9.3)
