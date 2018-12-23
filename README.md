@@ -12,33 +12,33 @@ You can test it live here: http://discord.tude.ga/
 - Dynamic Voice Channel System
 
 ### Planned
-- Statistics with MySQL Database
+- Statistics
 - Youtube Video playing
 - Youtube livestream playing
 - Save and load song playlists
 - Voice control of music (everyone can dream)
 
-## Technologies used
+## Dependencies
 * [Discord4j](https://discord4j.com/) (v2.9.3)
 * [JSON-java](https://github.com/stleary/JSON-java)
 
 ## Setup
 1. Clone repository in the IDE of your choice
-2. Add d4j & json.org to your classpath
-3. Go in `cls` and edit `settings.prop` with your values *(do not use " for the string values)*
+2. Add d4j & json.org dependencies
+3. Go in `cls` and edit `settings.prop` with your values *(do not use " for string values)*
 4. Done
 
 ## Files
 ### settings.prop
 * **CLIENT_TOKEN:** Your Discord Bot User Secret
-* **SERVER_ID:** Outdated. Just leave this one empty.
-* **PLAYING_TEXT:** Change what the bot is playing (In Discord interface)
+* **SERVER_ID:** Deprecated. Just leave this one empty.
+* **PLAYING_TEXT:** Change what the bot is playing (In Discord)
 * **LANG:** Change the language in which the bot replies
 
 ### modules.prop
 A # marks a comment.
 To add a new module use this syntax:
-`package.Class Arg1 ...`
+`package.Class [Arg1] [Arg2] [...]`
 
 ### ?.lang
 A language file. Filename (before .lang) marks the language, simply write this as **LANG** in **settings.prop**
