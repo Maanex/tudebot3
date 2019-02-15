@@ -5,6 +5,8 @@ You can test it live here: http://discord.tude.ga/
 
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
+**Please also notice that current versions of this bot are closed source again. You can ask for having a look though.**
+
 ## Features
 ### Done
 - Quotes Channel
@@ -16,7 +18,7 @@ You can test it live here: http://discord.tude.ga/
 - Youtube Video playing
 - Youtube livestream playing
 - Save and load song playlists
-- Voice control of music (everyone can dream)
+- Voice control for music, etc (everyone can dream)
 
 ## Dependencies
 * [Discord4j](https://discord4j.com/) (v2.9.3)
