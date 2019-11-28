@@ -1,3 +1,5 @@
+> **_NOTE:_**  This version is highly outdated, 3.x versions are not public and the new 4.0 version is completely rewritten in typescript
+
 # TudeBot v3.0
 
 This is the 3rd version of TudeBot for Discord.
@@ -5,7 +7,7 @@ You can test it live here: http://discord.tude.ga/
 
 **Please notice that this bot was made for personal use. You can still use it for your server but I cannot guarantee that everything is working perfectly outside the tested environment**
 
-**Please also notice that current versions of this bot are closed source again. You can ask for having a look though.**
+**Please also notice that current versions of this bot are closed source again.**
 
 ## Features
 ### Done
